@@ -28,6 +28,10 @@ function getMealList(){
                 </div>
                 `;
             });
+            mealList.classList.remove('notFound');
+        } else{
+            html = "Sorry we did not find any meals :(";
+            mealList.classList.add('notFound');
         }
 
         mealList.innerHTML = html;
