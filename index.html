@@ -12,17 +12,16 @@
     <body>
         <div class="container">
             <div class="meal-wrapper">
-                <div class="meal-serach">
+                <div class="meal-search">
                     <h2 class="title">Find meal ingredients</h2>
                     <blockquote>
                         Real food does not have ingredients, 
                         real food is ingredients.<br>
                         <cite>- Jamie Oliver</cite>
                     </blockquote>
-
                     <div class="meal-search-box">
-                        <input type = "text" class="search-content" 
-                        placeholder="enter an ingredient" id="search-input">
+                        <input type = "text" class="search-control" 
+                        placeholder="Enter an ingredient" id="search-input">
                         <button type="submit" class="search-btn btn" id="search-btn">
                             <i class="fas fa-search"></i>
                         </button>
@@ -31,6 +30,47 @@
 
                 <div class="meal-result">
                     <h2 class="title">Your search results</h2>
+                    <div id="meal">
+                        <!-- meal item -->
+                        <div class="meal-item">
+                            <div class="meal-image">
+                                <img src="food.webp" alt="food">
+                            </div>
+                            <div class="meal-name">
+                                <h3>Burger</h3>
+                                <a href="#" class="recipe-btn">Get Recipe</a>
+                            </div>
+                        </div>
+                        <!-- meal item -->
+                    </div>
+                </div>
+
+
+                <div class="meal-details">
+                    <!-- recipe close btn -->
+                    <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <!-- meal content -->
+                    <div class="meal-details-content">
+                        <h2 class="recipe-title">meals name here</h2>
+                        <p class="recipe-category">Category name</p>
+                        <div class="recipe instruct">
+                            <h3>instructions:</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!
+                            </p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod in reprehenderit maiores sed odit ea deleniti, dignissimos aperiam voluptate omnis.</p>
+
+                        </div>
+                        <div class="recipe-meal-img">
+                            <img src="food.webp" alt="">
+                        </div>
+                        <div class="recipe-link">
+                            <a href="#" target="_blank">Watch video</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
